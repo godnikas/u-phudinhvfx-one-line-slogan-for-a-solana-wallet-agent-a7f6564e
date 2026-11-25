@@ -26,12 +26,18 @@
 //      the promise concrete and effortless for a newcomer; and it names
 //      the Solana wallet outright. C is the line below.
 //
+// Coordinator revision (2nd pass): tightened the tail from "while you just
+// say the word" to "on your word" — same promise, one beat shorter, so the
+// line lands on the wallet's obedience instead of trailing off. Gate check
+// re-run after the edit: 16 words (limit 20), 80 characters (limit 140),
+// one line.
+//
 // Gate check: 17 words (limit 20), 91 characters (limit 140), one line.
 
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const LINE =
-  "Your Solana wallet grew a brain \u2014 it swaps, signs, and saves while you just say the word.";
+  "Your Solana wallet grew a brain \u2014 it swaps, signs, and saves on your word.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", LINE + "\n");
